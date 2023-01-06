@@ -13,11 +13,19 @@ body {
 }
 
 .title {
-    color: red;
+    color: blue;
 }
 
-h1 {
-    color: red;
+.chef-picture {
+    background-image: url("./images/chef.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
 }
+
 
 

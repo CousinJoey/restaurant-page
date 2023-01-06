@@ -1,4 +1,4 @@
-
+import loadHome from "./home";
 
 
 function createNav() {
@@ -41,16 +41,18 @@ function createNav() {
     nav.appendChild(titleContainer);
     nav.appendChild(navbarContainer);
 
+    homeBtn.addEventListener("click", (e) => {
+        const main = document.getElementById("main");
+        main.appendChild(loadHome());
+    })
+
     return nav
 }
 
 function createMain() {
 
     const main = document.createElement("main");
-
-    const mainContainer = document.createElement("div");
-    mainContainer.classList.add("main-container");
-    main.appendChild(mainContainer);
+    main.id = "main"
 
     return main
 }
@@ -62,6 +64,11 @@ function createFooter() {
     const footerContainer = document.createElement("div");
     footerContainer.classList.add("footer-container");
     footer.appendChild(footerContainer);
+
+    const footerText = document.createElement("p");
+    footerText.classList.add("footer-text");
+    footerText.textContent = "© Copyright 2023"
+    footerContainer.appendChild(footerText);
 
     return footer
 
