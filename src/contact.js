@@ -1,5 +1,5 @@
 
-function loadContact() {
+function CreateContact() {
 
 
     const contactContainer = document.createElement("div");
@@ -31,5 +31,11 @@ function loadContact() {
 
     return contactContainer;
 };
+
+function loadContact() {
+    const main = document.getElementById("main");
+    main.textContent = ""
+    main.appendChild(CreateContact());
+}
 
 export default loadContact

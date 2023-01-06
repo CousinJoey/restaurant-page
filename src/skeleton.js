@@ -43,18 +43,15 @@ function createNav() {
     nav.appendChild(navbarContainer);
 
     homeBtn.addEventListener("click", (e) => {
-        const main = document.getElementById("main");
-        main.appendChild(loadHome());
+        loadHome();
     })
 
     menuBtn.addEventListener("click", (e) => {
-        const main = document.getElementById("main");
-        main.appendChild(loadMenu());
+        loadMenu();
     })
 
     contactBtn.addEventListener("click", (e) => {
-        const main = document.getElementById("main");
-        main.appendChild(loadContact());
+        loadContact();
     })
 
     return nav

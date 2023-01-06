@@ -1,5 +1,5 @@
 
-function loadMenu() {
+function createMenu() {
 
     const menuContainer = document.createElement("div");
     menuContainer.classList.add("menu-container");
@@ -109,8 +109,12 @@ function loadMenu() {
 
     return menuContainer;
 
+}
 
-
+function loadMenu() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createMenu());
 }
 
 export default loadMenu

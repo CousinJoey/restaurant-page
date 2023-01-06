@@ -1,5 +1,5 @@
 
-function loadHome() {
+function createHome() {
 
     const mainContainer = document.createElement("div");
     mainContainer.classList.add("main-container");
@@ -16,6 +16,12 @@ function loadHome() {
 
     return mainContainer
 
+}
+
+function loadHome() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createHome());
 }
 
 export default loadHome;
