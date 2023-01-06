@@ -43,14 +43,26 @@ function createNav() {
     nav.appendChild(navbarContainer);
 
     homeBtn.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) {
+            return
+        }
+        setButtonActive(e);
         loadHome();
     })
 
     menuBtn.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) {
+            return
+        }
+        setButtonActive(e);
         loadMenu();
     })
 
     contactBtn.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) {
+            return
+        }
+        setButtonActive(e);
         loadContact();
     })
 
@@ -63,6 +75,20 @@ function createMain() {
     main.id = "main"
 
     return main
+}
+
+function setButtonActive(e) {
+
+    const navButtons = document.querySelectorAll(".nav-button");
+
+    navButtons.forEach(button => {
+        if (button.classList.contains("active")) {
+            button.classList.remove("active");
+        }
+
+        e.target.classList.add("active");
+    });
+
 }
 
 function createFooter() {
