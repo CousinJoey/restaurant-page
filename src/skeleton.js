@@ -1,5 +1,6 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
+import loadContact from "./contact";
 
 function createNav() {
 
@@ -46,9 +47,14 @@ function createNav() {
         main.appendChild(loadHome());
     })
 
-    menuBtn.addEventListener("click", (e) =>{
+    menuBtn.addEventListener("click", (e) => {
         const main = document.getElementById("main");
         main.appendChild(loadMenu());
+    })
+
+    contactBtn.addEventListener("click", (e) => {
+        const main = document.getElementById("main");
+        main.appendChild(loadContact());
     })
 
     return nav
