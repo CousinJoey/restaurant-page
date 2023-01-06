@@ -1,5 +1,5 @@
 import loadHome from "./home";
-
+import loadMenu from "./menu";
 
 function createNav() {
 
@@ -44,6 +44,11 @@ function createNav() {
     homeBtn.addEventListener("click", (e) => {
         const main = document.getElementById("main");
         main.appendChild(loadHome());
+    })
+
+    menuBtn.addEventListener("click", (e) =>{
+        const main = document.getElementById("main");
+        main.appendChild(loadMenu());
     })
 
     return nav
