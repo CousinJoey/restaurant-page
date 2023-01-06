@@ -52,4 +52,10 @@ body {
     width: 50px;
 }
 
+.google-map {
+    background-color: aqua;
+    height: 250px;
+    width: 250px;
+}
+
 
