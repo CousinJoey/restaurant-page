@@ -16,6 +16,9 @@ function CreateContact() {
     addressInfo.classList.add("contact-info")
     addressInfo.textContent = "📍 474 Forest Ave, Plymouth Township, Mi"
 
+    const googleMapContainer = document.createElement("div");
+    googleMapContainer.classList.add("google-map-container");
+
     const googleMap = document.createElement("div");
     googleMap.classList.add("google-map");
 
@@ -23,7 +26,8 @@ function CreateContact() {
     contactInfoContainer.appendChild(addressInfo);
 
     contactContainer.appendChild(contactInfoContainer);
-    contactContainer.appendChild(googleMap);
+    googleMapContainer.appendChild(googleMap);
+    contactContainer.appendChild(googleMapContainer);
 
 
 

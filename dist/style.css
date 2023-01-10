@@ -8,6 +8,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
+    font-family: cursive
 }
 
 nav {
@@ -17,6 +18,31 @@ nav {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 2em;
+}
+
+.navbar-container {
+    display: flex;
+    gap: 2em;
+}
+
+.nav-button {
+    padding: 24px 36px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 12px;
+}
+
+.nav-button:hover {
+    border: 2px solid rgba(250, 250, 250, 0.973);
+    border-radius: 12px;
+}
+
+.active {
+    border-bottom: 2px solid rgba(250, 250, 250, 0.973);
+    border-radius: 12px;
 }
 
 
@@ -50,7 +76,8 @@ main {
 }
 
 .title {
-    color: blue;
+    color: white;
+    font-size: 4vw;
 }
 
 .chef-picture {
@@ -58,45 +85,133 @@ main {
     justify-content: center;
     align-items: center;
     background-image: url("./images/chef.jpg");
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: 500px 500px;
+    background-size: contain;
+    background-position: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
+    height: 20em;
+    width: 20em;
     margin-bottom: 2em;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+}
+
+.menu-item-container {
+    display: flex;
+    align-items: center;
+    gap: 8vw;
+    border-color: rgba(0,0,0, .4);
+    border-style: solid;
+    border-radius: 12px;
+    height: 10em;
+    padding: 1em;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.picture-items {
+    background-image: url(./images/margherita.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
 }
 
 
 .item-1 {
-    background-color: aqua;
-    height: 50px;
-    width: 50px;
+    background-image: url("./images/margherita.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .item-2 {
-    background-color: red;
-    height: 50px;
-    width: 50px;
+    background-image: url("./images/capricciosa.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .item-3 {
-    background-color: yellow;
-    height: 50px;
-    width: 50px;
+    background-image: url("./images/marinara.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .item-4 {
-    background-color: violet;
-    height: 50px;
-    width: 50px;
+    background-image: url("./images/diavola.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.name-container {
+    width: 60%;
+}
+
+.item-names-and-prices {
+    color: white;
+    font-size: 2vw;
+}
+
+.item-descriptions {
+    color: white;
+    font-size: 2vw;
+    flex-flow: wrap;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    height: 40%;
+}
+
+.contact-info {
+    display: flex;
+    font-size: 2vw;
+    margin: 0;
+    text-align: center;
+    word-break: break-all;
+}
+
+.google-map-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    width: 100%;
 }
 
 .google-map {
-    background-color: aqua;
-    height: 250px;
-    width: 250px;
+    background-image: url(./images/location.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
 }
 
 

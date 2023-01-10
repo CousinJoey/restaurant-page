@@ -7,6 +7,9 @@ function createMenu() {
     const menuItem1 = document.createElement("div");
     menuItem1.classList.add("menu-item-container");
 
+    const pictureItem1Container = document.createElement("div");
+    pictureItem1Container.classList.add("picture-container");
+
     const pictureItem1 = document.createElement("div");
     pictureItem1.classList.add("picture-items");
     pictureItem1.classList.add("item-1")
@@ -15,21 +18,26 @@ function createMenu() {
     nameContainer1.classList.add("name-container");
 
     const itemName1 = document.createElement("h2");
-    itemName1.classList.add("item-names-&-prices");
-    itemName1.textContent = "test one" + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + "19";
+    itemName1.classList.add("item-names-and-prices");
+    itemName1.textContent = "Margherita" + '....' + "19";
 
     const itemDescription1 = document.createElement("p");
     itemDescription1.classList.add("item-descriptions");
-    itemDescription1.textContent = "Cheese, bread, it's a pizza?";
+    itemDescription1.textContent = "Mozzarella, garlic, basil, olive oil";
 
-    menuItem1.appendChild(pictureItem1);
-    menuItem1.appendChild(nameContainer1);
+
+    pictureItem1Container.appendChild(pictureItem1)
     nameContainer1.appendChild(itemName1);
     nameContainer1.appendChild(itemDescription1);
+    menuItem1.appendChild(pictureItem1Container);
+    menuItem1.appendChild(nameContainer1);
 
 
     const menuItem2 = document.createElement("div");
     menuItem2.classList.add("menu-item-container");
+
+    const pictureItem2Container = document.createElement("div");
+    pictureItem2Container.classList.add("picture-container");
 
     const pictureItem2 = document.createElement("div");
     pictureItem2.classList.add("picture-items");
@@ -39,21 +47,24 @@ function createMenu() {
     nameContainer2.classList.add("name-container");
 
     const itemName2 = document.createElement("h2");
-    itemName2.classList.add("item-names-&-prices");
-    itemName2.textContent = "test two" + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + "23";
+    itemName2.classList.add("item-names-and-prices");
+    itemName2.textContent = "Capricciosa" + '....' + "23";
 
     const itemDescription2 = document.createElement("p");
     itemDescription2.classList.add("item-descriptions");
-    itemDescription2.textContent = "Cheese, bread, it's a pizza still...";
+    itemDescription2.textContent = "Mozzarella, ham, mushroom, aritchoke, tomato";
 
-    menuItem2.appendChild(pictureItem2);
-    menuItem2.appendChild(nameContainer2);
+    pictureItem2Container.appendChild(pictureItem2)
     nameContainer2.appendChild(itemName2);
     nameContainer2.appendChild(itemDescription2);
-
+    menuItem2.appendChild(pictureItem2Container);
+    menuItem2.appendChild(nameContainer2);
 
     const menuItem3 = document.createElement("div");
     menuItem3.classList.add("menu-item-container");
+
+    const pictureItem3Container = document.createElement("div");
+    pictureItem3Container.classList.add("picture-container");
 
     const pictureItem3 = document.createElement("div");
     pictureItem3.classList.add("picture-items");
@@ -63,22 +74,26 @@ function createMenu() {
     nameContainer3.classList.add("name-container");
 
     const itemName3 = document.createElement("h2");
-    itemName3.classList.add("item-names-&-prices");
-    itemName3.textContent = "test three" + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + "17";
+    itemName3.classList.add("item-names-and-prices");
+    itemName3.textContent = "Marinara" + '....' + "17";
 
     const itemDescription3 = document.createElement("p");
     itemDescription3.classList.add("item-descriptions");
-    itemDescription3.textContent = "Cheese, bread, it's a pizza still...nothing has changed";
+    itemDescription3.textContent = "Marinara, garlic, oregano";
 
-    menuItem3.appendChild(pictureItem3);
-    menuItem3.appendChild(nameContainer3);
+    pictureItem3Container.appendChild(pictureItem3)
     nameContainer3.appendChild(itemName3);
     nameContainer3.appendChild(itemDescription3);
+    menuItem3.appendChild(pictureItem3Container);
+    menuItem3.appendChild(nameContainer3);
 
 
 
     const menuItem4 = document.createElement("div");
     menuItem4.classList.add("menu-item-container");
+
+    const pictureItem4Container = document.createElement("div");
+    pictureItem4Container.classList.add("picture-container");
 
     const pictureItem4 = document.createElement("div");
     pictureItem4.classList.add("picture-items");
@@ -88,17 +103,18 @@ function createMenu() {
     nameContainer4.classList.add("name-container");
 
     const itemName4 = document.createElement("h2");
-    itemName4.classList.add("item-names-&-prices");
-    itemName4.textContent = "test four" + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + "28";
+    itemName4.classList.add("item-names-and-prices");
+    itemName4.textContent = "Diavola" + '....' + "28";
 
     const itemDescription4 = document.createElement("p");
     itemDescription4.classList.add("item-descriptions");
-    itemDescription4.textContent = "Cheese, bread, it's a pizza still...nothing has changed. Still";
+    itemDescription4.textContent = "Pepperoni, mozzarella, marinara";
 
-    menuItem4.appendChild(pictureItem4);
-    menuItem4.appendChild(nameContainer4);
+    pictureItem4Container.appendChild(pictureItem4)
     nameContainer4.appendChild(itemName4);
     nameContainer4.appendChild(itemDescription4);
+    menuItem4.appendChild(pictureItem4Container);
+    menuItem4.appendChild(nameContainer4);
 
 
     menuContainer.appendChild(menuItem1);

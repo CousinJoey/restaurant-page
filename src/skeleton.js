@@ -17,13 +17,14 @@ function createNav() {
 
     const title = document.createElement("h1");
     title.classList.add("title");
-    title.textContent = "Pizza Shop";
+    title.textContent = "Eustorgio Marino";
     titleContainer.appendChild(title);
 
 
 
     const homeBtn = document.createElement("button")
     homeBtn.classList.add("nav-button");
+    homeBtn.classList.add("home-button");
     homeBtn.textContent = "Home";
 
     const menuBtn = document.createElement("button");
@@ -72,7 +73,7 @@ function createNav() {
 function createMain() {
 
     const main = document.createElement("main");
-    main.id = "main"
+    main.id = "main";
 
     return main
 }
@@ -114,6 +115,8 @@ function createPage() {
     content.appendChild(createNav());
     content.appendChild(createMain());
     content.appendChild(createFooter());
+
+    loadHome();
 }
 
 export default createPage;
